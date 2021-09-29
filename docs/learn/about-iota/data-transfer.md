@@ -7,27 +7,27 @@ description: A major use-case for the IOTA Technology is Data Transfer. Learn ho
 
 IOTA offers the ability to transfer data for free. The data transfer is fast, immutable, unforgettable, and secure and is one of the core features of IOTA. This capability opens up a wide array of use cases that most other cryptocurrencies cannot serve in the way that IOTA does.
 
-In IOTA, clients like wallets or applications send and receive messages (data objects) through nodes. Nodes are the entry and exit points for these messages, and they communicate with each other and with the connected clients.
+In IOTA, clients (like wallets or applications) send and receive messages (data objects) through nodes. Nodes are the entry and exit points for these messages, and they communicate with each other and with the connected clients.
 
-There are several types of messages implemented in IOTA. Some transfer value (the IOTA token or digital assets) while others transfer no value but pure data; other types can contain both. This enables the decentralized transport of data and value in a single message with the highest security grade and the total absence of fees. The nodes of the network take care of the secure distribution of all messages in the Tangle.
+There are several types of messages implemented in IOTA. Some transfer value (the IOTA token or digital assets) while others transfer no value but pure data; other types of messages can contain both. This enables the decentralized transport of data and value in a single message with the highest security grade and the total absence of fees. The nodes of the network take care of the secure distribution of all messages in the Tangle.
 
-## Data Usage
+## Data usage
 
 Many applications and use cases can profit from this combination of free, secure, and fast data and value transport, which is a demand in all major industries. Read more about IOTA data use cases [here](https://www.iota.org/solutions/industries).
 
 ## What is an IOTA message?
 
-A message is an object consisting of information that is broadcasted in the Tangle.
+A message is an object consisting of information that is broadcasted in the Tangle. Every application that uses the protocol can issue these information objects to a node.
 
-Every application that uses the protocol is free to issue these information objects to a node. The job of an IOTA node is to verify and broadcast all these information objects through the network (if they are valid) and follow the standards of the protocol.
+The job of an IOTA node is to verify and broadcast the information objects through the network (if they are valid) and follow the standards of the protocol.
 
 If a node decides that a message is valid, it will send it to its neighbors using the gossip protocol. Every neighbor that receives the message transfers it again to its neighbors and so on. Very quickly, every other node in the network sees the message and has the same information and the same knowledge of the "state" of the network at a given time.
 
 A message consists of basic information that defines the type and structure of the message, and it can also contain different **payloads**. A payload is an attachment that can include an IOTA transaction and many other kinds of data.
 
-The IOTA protocol categorizes these information packages into different types and handles certain types differently than others. Therefore, every message sent to the network must contain a unique label as an identifier that describes exactly what this message is and what should be done with it. Only with this information "printed" on the label will a node accept and process a message. This can be understood as similar to filling out a label before sending a package using your local postal service.
+The IOTA protocol categorizes these information packages into different types and handles certain types differently than others. So, every message sent to the network must contain a unique label as an identifier that describes exactly what this message is and what should be done with it. Only with this information "printed" on the label will a node accept and process a message. This is like filling out a label before sending a package using your local postal service.
 
-A more detailed description of this process on the protocol level can be found [here](https://github.com/iotaledger/protocol-rfcs/blob/33570042d8f2241ecc9a9104f5eb38fbf4bc3c95/text/0017-message/0017-message.md).
+A more detailed description of this process on the protocol level is [here](https://github.com/iotaledger/protocol-rfcs/blob/33570042d8f2241ecc9a9104f5eb38fbf4bc3c95/text/0017-message/0017-message.md).
 
 ## Sending a message in IOTA
 
@@ -37,11 +37,11 @@ To make sure that a message is valid and a node knows what to do with the messag
 
 **Message ID**
 
-The message ID is created as a unique cryptographic hash out of the bytes contained in the message. It is created by the client (application) or wallet that issues the message.
+The message ID is a unique cryptographic hash out of the bytes contained in the message. It is created by the client (application) or wallet that issues the message.
 
 **Network ID**
 
-Network ID is an identification in which IOTA network the message belongs (mainnet/testnet/private network). Nodes will only accept messages that identify themself as part of the network the node belongs to.
+Network ID shows to which IOTA network the message belongs (mainnet, testnet, or private network). Nodes will only accept messages that identify themself as part of the same network to which the node belongs.
 
 **Parents length and Parents ID**
 
@@ -49,15 +49,15 @@ This is the amount and the identifier of the messages which are referenced by th
 
 **Payload length**
 
-As messages in IOTA are not allowed to exceed a size of 32kb, the message must declare the size of its payload to the node, just like you would need to report the weight of a package in advance if you want to send it with a courier.
+Messages in IOTA may not exceed a size of 32 KB. So, the message must declare the size of its payload to the node, just as would report the weight of a package before sending it with a courier.
 
 **Payload type**
 
-A definition of which kind of payload is contained in the message. The node needs to know this, as some payload types need to be handled differently than others.
+A payload type defines which kind of payload is contained in the message. The node needs to know this because some payload types need to be handled differently than others.
 
 **Nonce**
 
-The nonce lets the message fulfill the Proof of Work requirement. Proof of Work is mainly done locally on the device that issues the message and is a form of spam protection. But it can also be done by the node if the node allows this. That is a very useful feature as it enables very low-powered devices to issue messages (like sensors, chips, and so on). These sensors can send a message to a node that allows messages without pre-performed POW, and then the POW is done by the node (which is usually running on a more powerful device). This is one of the key features of the protocol and the reason why IOTA is so suitable for the Internet of Things and data applications. Users who want to issue many data messages from a huge amount of extremely low-power devices only need to connect those devices to a node that allows them to do the PoW for them (which will be, in most cases, their own node). As the PoW requirement is extremely low, it is no problem to do this even for a large number of devices for a node.
+The nonce lets the message fulfill the Proof of Work (PoW) requirement. Proof of Work is mainly done locally on the device that issues the message and is a form of spam protection. But it can also be done by the node if the node allows this. That is a very useful feature as it enables very low-powered devices to issue messages (like sensors, chips, and so on). These sensors can send a message to a node that accepts messages without pre-performed PoW, and then the node (which is usually running on a more powerful device) carries out the PoW. This is one of the key features of the protocol and the reason why IOTA is so suitable for the Internet of Things and data applications. Users who want to issue many data messages from a huge amount of extremely low-power devices only need to connect those devices to a node that allows them to do the PoW for them (which will be, in most cases, their own node). As the PoW requirement is extremely low, it is no problem to do this even for a large number of devices for a node.
 
 A side note: in the upcoming 2.0 IOTA version, this PoW requirement will become adaptive and is planned to be completely removed for times of normal network loads. Read more about IOTA 2.0 [here](https://blog.iota.org/path-towards-full-decentralization-with-iota-2-0/).
 
@@ -65,32 +65,32 @@ A side note: in the upcoming 2.0 IOTA version, this PoW requirement will become 
 
 This is the defined outer structure of every message in the IOTA protocol (in other words, the label of our package):
 
-All this information must be created by a client (wallet software or other programs that generate IOTA messages) to issue a message to a node and make sure the node knows what to do with this message.
+This information must be created by a client (wallet software or other programs that generate IOTA messages) in order to issue a message to a node and make sure the node knows what to do with this message.
 
 ### Message validation
 
-A message is considered valid if the following syntactic rules are met:
+A message is valid if it meets the following syntactic rules:
 
 1. The message size must not exceed 32 KiB (32 \* 1024 bytes).
-2. Analyzing the syntax structure of the message (parsing) does not leave any unknown bits. This means that all the message information is fully readable by the node (unreadable information could contain malicious code and is therefore denied).
-3. If the payload type is known to the node.
+2. Analyzing the syntax structure of the message (parsing) does not leave any unknown bits. This means that all the message information is fully readable by the node (unreadable information could contain malicious code and so denied).
+3. If the node knows the payload type.
 4. If the message PoW hash indicates that the minimum requirements of PoW requested by the network or the node have been fulfilled.
 5. The number of parent messages must be between one and eight.
 
-The message will only be accepted for processing if these parameters are met and readable by the node.
+The message will only be accepted for processing if these parameters are met and are readable by the node.
 
 ### Payloads
 
-A message may contain a payload. Three payload types are currently defined in the mainnet, but developers can create their custom payloads and attach them to messages as long as they fit the general requirements. This means an IOTA message can contain many types of information, and the IOTA Token as transaction payload is just one of many. Below is a table of the currently specified core payloads with a link to their specifications.
+A message may contain a payload. Three payload types are currently defined in the mainnet, but developers can create their custom payloads and attach them to messages as long as they fit the general requirements. This means an IOTA message can contain many types of information, and the IOTA Token as transaction payload is only one of many. Below is a table of the currently specified core payloads with a link to their specifications.
 
 | Payload Name | Type Value | | --------------------------------------- | ----------- | | [Signed Transaction](https://wallet-lib.docs.iota.org/specs/index.html#signedtransactionpayload) | 0 | | [Milestone Payload](https://github.com/jakubcech/protocol-rfcs/tree/jakubcech-milestonepayload) | 1 | | [Indexation Payload](https://wallet-lib.docs.iota.org/specs/index.html#indexationpayload) | 2 |
 
-A message containing only an **indexation payload** (data) can be sent without a signature. It can hold any data the user wants to send, as long as it is parsable and follows the required syntax and size limit.
+It is possible to send a message containing only an **indexation payload** (data) without a signature. The message can hold any data the user wants to send, as long as it is parsable and follows the required syntax and size limit.
 
-The message is specified by an **index**, which will make it possible for any users to find this message and the containing data by searching the network for this index.
+The message is specified by an **index**, which makes it possible for any user to find the message and the containing data by searching the network for the index.
 
-As you may have realized, a message in the IOTA network does not need a specific receiver. All messages in the network are propagated to all nodes and are visible to every network user. Also, the data payload (if not encrypted by the sender) is visible for everyone that sees the message. If you want to send a data message using the IOTA protocol that should only be visible to a selected group of receivers, the IOTA Streams framework is built precisely for this purpose. It will enable a direct gateway to receivers and encrypt the information from everyone else in the network. Read more about IOTA Streams [here](https://www.iota.org/solutions/streams).
+As you may have realized, a message in the IOTA network does not need a specific receiver. All messages in the network are propagated to all nodes and are visible to every network user. Also, the data payload (if not encrypted by the sender) is visible for everyone that sees the message. If you want to send a data message using the IOTA protocol that should only be visible to a selected group of receivers, use the IOTA Streams framework. It is built precisely for this purpose. It will enable a direct gateway to receivers and encrypt the information from everyone else in the network. Read more about IOTA Streams [here](https://www.iota.org/solutions/streams).
 
 A **data message**, which is defined as an indexation payload, can be easily found by everyone who knows that message's index. If you want to send an arbitrary message or sensitive data, you need to tell the receiver which index you are using. He can observe the network for all messages containing this index using an explorer.
 
-In a **value transaction**, the payment receiver (an IOTA address) will be specified in the "signed transaction payload" field. Then, only the owner of that specific address can use the contained funds by unlocking them with the private key that belongs to that receiving address. Read more about how sending value transactions in IOTA work here: [value transfer](https://wiki.iota.org/docs/learn/about-iota/value-transfer)
+In a **value transaction**, the payment receiver (an IOTA address) is specified in the "signed transaction payload" field. Then, only the owner of that specific address can use the contained funds by unlocking them with the private key that belongs to that receiving address. Read more about how sending value transactions in IOTA work here: [value transfer](https://wiki.iota.org/docs/learn/about-iota/value-transfer)
