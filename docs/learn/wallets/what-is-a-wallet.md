@@ -6,9 +6,9 @@ description: A wallet helps you to securely store and handle your Tokens. We
 
 # What is a Wallet?
 
-A wallet is a tool that gives you access to your IOTA tokens. One very important fact that you need to understand from the beginning is **your IOTA tokens are never stored INSIDE a wallet**.
+A wallet is a tool that gives you access to your IOTA tokens. One very important fact that you need to understand from the beginning is that **your IOTA tokens are never stored inside a wallet**.
 
-This is a common misunderstanding. All your IOTA tokens only exist in the Tangle network and cannot leave this network. So you do not physically “store” them “inside” anything.
+This is a common misunderstanding. Your IOTA tokens only exist in the Tangle network and cannot leave the network. So you do not physically “store” them “inside” anything.
 
 A wallet is a tool to access, transfer and manipulate your tokens on the IOTA network. It gives you a convenient solution to store your secret keys and use them in the network to control your tokens.
 
@@ -23,7 +23,7 @@ Think of a wallet more like a browser that knows exactly the place where your to
 
 A software wallet is a computer program that is executed in the operating system of your device (a computer or smartphone). It has no representation in a physical device and the program code is not written (or "hard-coded") in a computer chip. Software wallets are user-friendly and therefore a very popular way to handle your tokens. They usually need a short setup process where you enter your secret seed once – and then never need to type this complicated list of letters or characters again. You log in to the software wallet with a carefully chosen password and gain access to your tokens. Now you can easily send and receive tokens.
 
-But as software wallets are part of your operating system, the security of a software wallet can always be only as good as the security of the entire operating system. So you need to make sure that your operating system is free of malicious software, otherwise it will be easy for an attacker to get access your secret keys and your tokens. If you use a software wallet to handle your IOTA tokens, always have an up-to-date system, run quality antivirus and anti-malware programs, and follow best practices for cybersecurity.
+But as software wallets are part of your operating system, the security of a software wallet can always be only as good as the security of the entire operating system. So you need to make sure that your operating system is free of malicious software, or it will be easy for an attacker to get access your secret keys and your tokens. If you use a software wallet to handle your IOTA tokens, always have an up-to-date system, run quality antivirus and anti-malware programs, and follow best practices for cybersecurity.
 
 The IOTA Foundation has developed a software wallet that follows the highest standards to keep your secrets safe. Read about the Firefly wallet here: [**Firefly Wallet**](https://wiki.iota.org/docs/learn/wallets/firefly-wallet)
 
