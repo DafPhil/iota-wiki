@@ -12,7 +12,7 @@ This is a common misunderstanding. Your IOTA tokens only exist in the Tangle net
 
 A wallet is a tool to access, transfer and manipulate your tokens on the IOTA network. It gives you a convenient solution to store your secret keys and use them in the network to control your tokens.
 
-The wallet knows the private key and the public key of your **seed**. Armed with these two points of cryptographic information, a wallet can access the addresses of all your tokens on the network and has full control over all functions of the ledger. The wallet takes care of securely storing this important information for you. But if you lose access to the wallet, you lose access to this information, so it is **essential** that you always have proper backups of these secrets stored in a safe location.
+The wallet knows the private key and the public key of your **seed**. Armed with these two points of cryptographic information, a wallet can access the addresses of all your tokens on the network and has full control over all functions of the Ledger. The wallet takes care of securely storing this important information for you. But if you lose access to the wallet, you lose access to this information, so it is **essential** that you always have proper backups of these secrets stored in a safe location.
 
 Think of a wallet more like a browser that knows exactly the place where your tokens sit in the huge IOTA network and that makes it possible for you to control them. But again, never forget: the tokens are always and only on the Tangle and never in your wallet. In crypto, we divide wallets into two categories:
 
