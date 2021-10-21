@@ -43,7 +43,7 @@ The first version of this page is based on the [Google's style guide](https://de
 
 ### Quotes and Names
 
-Never modify quotes or names. Fix typos in a quote only if we are the first to publish it.
+Never modify quotations or names. Fix typos in a quotation only if we are the first to publish it.
 
 Do not contract short quotes. Put `[...]` in place of an omitted part. Never omit parts that change the meaning of the quote, its emotion, or anything else that could lead to misinterpreting it.
 
@@ -283,7 +283,7 @@ Put long quotes in a paragraph-style quote (`>`).
 
 You are writing to people of many cultures. Keep that in mind.
 
-- Don't be too culturally specific. In particular, don't refer to specific holidays, cultural practices, or sports unless you're certain they're known worldwide.
+- Don't be too culturally specific. In particular, don't refer to specific holidays, cultural practices, or sports unless you're certain they are known worldwide.
 - Avoid colloquialisms, idioms, or slang. Phrases like _ballpark figure_, _back burner_, or _hang in there_ can be confusing and difficult to translate.
 
 ### Using Third-party Sources
@@ -298,11 +298,11 @@ Content includes the following types: text, images, code, logos, and speech.
 
 **Key Point:** Be conversational without being frivolous.
 
-In your documents, aim for a voice and tone that's conversational, friendly, and respectful without being overly colloquial or frivolous; a voice that's casual and natural and approachable, not pedantic or pushy. Try to sound like a knowledgeable friend who understands what the developer wants to do.
+In your documents, aim for a voice and tone that is conversational, friendly, and respectful without being overly colloquial or frivolous; a voice that is casual, natural and approachable, not pedantic or pushy. Try to sound like a knowledgeable friend who understands what the developer wants to do.
 
 Don't try to write exactly the way you speak; you probably speak more colloquially and verbosely than you should write, at least for developer documentation. But aim for a conversational tone rather than a formal one.
 
-Don't try to be super-entertaining, but also don't aim for super-dry. Be human, let your personality show, be memorable; you can even be a little funny now and then. But remember that the primary purpose of the document is to provide information to someone who's looking for it.
+Don't try to be super-entertaining, but also don't aim for super-dry. Be human, let your personality show, be memorable; you can even use a little humor now and then. But remember that the primary purpose of the document is to provide information to someone who is looking for it.
 
 Remember that many readers aren't fluent English speakers, many of them come from cultures different from yours, and your document might be translated into other languages.
 
