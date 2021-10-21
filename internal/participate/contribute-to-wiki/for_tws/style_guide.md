@@ -1,6 +1,6 @@
 # Style Guide
 
-Our goal is to let our readers fully understand IOTA, be it IOTA Foundation, community, theory and practice behind the IOTA technology, or tools that support it. We only provide accurate information. We convey it in a clear form with no room for misunderstanding. Our writing welcomes and encourages learning and reading. With this in mind, we form our style guide.
+Our goal is to let readers fully understand IOTA, be it IOTA Foundation, community, theory and practice behind the IOTA technology, or tools that support it. We only provide accurate information. We convey it in a clear form with no room for misunderstanding. Our writing welcomes and encourages learning and reading. With this in mind, we form our style guide.
 
 The first version of this page is based on the [Google's style guide](https://developers.google.com/style). Our guide is still under construction and does not follow its own recommendations on many occasions.
 
@@ -24,7 +24,7 @@ The first version of this page is based on the [Google's style guide](https://de
 - [Use standard American spelling](https://developers.google.com/style/spelling) and punctuation.
 - [Put conditional clauses before instructions](https://developers.google.com/style/clause-order), not after.
 - Use a common glossary across all documentation. Be consistent. Avoid synonyms for technical terms unless you have mentioned that term beforehand and the relation is clear.
-- For general terms, see the [Google's word list](https://developers.google.com/style/wordlist).
+- For general terms, see the [Google word list](https://developers.google.com/style/wordlist).
 - Only use words you know, both by their meaning and spelling. If you do not know a word, the chances are that the reader does not know it either.
 
 ### Formatting, Punctuation, and Organization
