@@ -17,7 +17,7 @@ IOTA has always worked towards solving the big goal in crypto. Solving the block
 
 Over the last couple of years, IOTA has put an immense amount of research into developing a network that can be all the above described. Currently, this network is live in the [GoShimmer network](/goshimmer/welcome)
 
-This network has been live since the beginning of 2020 and is the testbed for all research implementations that aim to improve the approach to bring this technology finally to the IOTA mainnet and remove the Coordinator node. More and more maturity has been reached, as described in this [blog.](https://blog.iota.org/path-towards-full-decentralization-with-iota-2-0/)
+This network has been live since the beginning of 2020 and is the testbed for all research implementations that aim to improve the approach to bring this technology finally to the IOTA mainnet and remove the Coordinator node. More and more maturity has been reached, as described in this [blog post.](https://blog.iota.org/path-towards-full-decentralization-with-iota-2-0/)
 
 The [IOTA Research Team](/learn/research/research-outline) test all Coordicide components together with the community in this public testnet. Everyone can participate, [spin up a node](/goshimmer/tutorials/setup) in the network, test the solutions, and support the research.
 
