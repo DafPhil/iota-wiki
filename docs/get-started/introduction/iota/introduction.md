@@ -33,8 +33,8 @@ performant _consensus_ and ledger solution.
 
 ## IOTA Mainnet
 
-The IOTA mainnet is the production grade network on which the [IOTA token](/get-started/introduction/iota/iota-token)
-is available. It currently runs the [Stardust protocol version](/learn/protocols/stardust/introduction).
+The IOTA mainnet is the production-grade network on which the [IOTA token](/get-started/introduction/iota/iota-token)
+is available. It currently runs the [Stardust protocol version](/learn/protocols/stardust/introduction) but will be updated to IOTA 2.0 in 2024.
 
 ## Feeless Transactions
 
@@ -44,7 +44,7 @@ cost-effective.
 
 ## Powered by a Non-Profit Foundation
 
-Main development of IOTA is fostered by the [IOTA Foundation](https://iota.org), which is a non-profit organization
+The main development of IOTA is fostered by the [IOTA Foundation](https://iota.org), which is a non-profit organization
 based in Berlin, Germany.
 
 ## Continuous Innovation
